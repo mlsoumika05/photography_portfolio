@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Photographic Portfolio</title>
+  <meta name="viewport" content="Width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <div class="header">
+    <h1 class="logo"> Web Heads</h1>
+    <h2 class="Portfolio">Portfolio</h2>
+    <div class="headernav">
+      <nav>
+        <a href="#introduction">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact us</a>
+      </nav>
+    </div>
+  </div>
+  <article id="introduction">
+    <div class="introimage"><img src="web_heads.jpg"></div>
+    <h2>We're Web Heads</h2>
+    <h3>Photographers | Event Management</h3>
+    <blockquote>"Photography is the art of capturing moments in time,
+      weaving emotions and stories through the lens of a camera.Photographers skillfully freeze memories,
+      create visual narratives, and evoke powerful emotions with their craft."
+      <span>-Aaron siskind</span>
+    </blockquote>
+    <div class="social_icons">
+      <ul>
+        <li>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </li>
+      </ul>
+    </div>
+  </article>
+  <article id="about">
+    <h2>MOTIVES AND GOALS</h2>
+    <p><strong>WEB HEADS,</strong> we are group of professional photographer with a deep passion for capturing life's
+      fleeting moments. we've been on this incredible journey for over a decade, turning our love for photography into a
+      fulfilling career.
+      Our photography style is characterized by its natural and timeless quality.
+      to create images that touch hearts and inspire. we believe that every photograph should evoke emotions, whether
+      it's a candid family portrait or a dramatic landscape shot. Through our work, we hope to bring joy and preserve
+      cherished memories.</p>
+    <div class="about">
+      <div class="aboutarea">
+        <img src="https://expertphotography.b-cdn.net/wp-content/uploads/2021/09/Photography-Portfolio-Jon-Tyson.jpg"
+          loading="lazy"  alt="photos">
+        <p1>"Photography is a way of feeling, of touching, of loving. What you have caught on film is captured
+          forever... It remembers little things, long after you have forgotten everything."</p1>
+      </div>
+      <div class="aboutarea">
+        <img
+          src="https://expertphotography.b-cdn.net/wp-content/uploads/2021/09/Photography-Portfolio-Alif-Ngoylung.jpg" loading="lazy"
+          alt="view of the hill">
+        <p1>"Photography, as a powerful medium of expression and communications, offers an infinite variety of
+          perception, interpretation, and execution."</p1>
+      </div>
+      <div class="aboutarea">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXitCz8VgIO-e5WWjGx5sdzcehTQuzvBvvPA&usqp=CAU"
+        loading="lazy"  alt="models">
+        <p1>"Photography, for me, is not looking, it's feeling. If you can't feel what you're looking at, then you're
+          never going to get others to feel anything when they look at your pictures."</p1>
+      </div>
+      <div class="aboutarea">
+        <img src="https://t3.ftcdn.net/jpg/02/26/31/58/240_F_226315807_34Cr7nCCiVY0RkvzyV66qXfZeMN9ucKn.jpg"
+        loading="lazy" alt="models">
+        <p1>"Photography is a reality so subtle that it becomes more real than reality."</p1>
+      </div>
+    </div>
+  </article>
+  <article id="gallery">
+    <div class="galleryintro">
+      <h2> Our collection</h2>
+      <p>We specialize in portrait and lifestyle photography, aiming to
+        reveal the genuine personalities and connections that make each moment special</p>
+      <button class="button" onclick="carousel()">Slideshow Mode</button>
+    </div>
+    <div id="images">
+    </div>
+  </article>
+
+  <section id="contact">
+    <h2>Reach out to us at</h2>
+    <div class="address">
+      <h2>ADDRESS-</h2>
+      <p>40 Castlemaine Street<br />Milton QLD 4064</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.141783004057!2d153.0095312!3d-27.464845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9150abedfe920b%3A0xf02a35bd721b500!2sSuncorp%20Stadium!5e0!3m2!1sen!2sin!4v1695048188154!5m2!1sen!2sin"
+        width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="contact-form">
+      <span class="heading">Leave a message,here</span>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" required="">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required="">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required=""></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="lastsec">
+      <ul>
+        <li>
+          <p><a href="#"><i class="fa fa-phone"></i></a><strong>(07) 3331 5000</strong></p>
+        </li>
+        <li>
+          <p><a href="#"><i class="fa fa-envelope"></i><strong>webheads@gmail.com</strong></a></p>
+        </li>
+        <li>
+          <p><a href="#"><i class="fab fa-facebook"></i><strong>facebook.com/WebHeads</strong></a></p>
+        </li>
+        <li>
+          <p><a href="#"><i class="fab fa-instagram"></i><strong>instagram.com/WebHeads</strong></a></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <strong> Copyright &copy; WebHeads Photography, Inc.</strong>
+  </footer>
+
+
+</body>
+
+</html>
